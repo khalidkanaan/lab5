@@ -44,7 +44,7 @@ public class EndpointsTest {
 
     @Test
     public void getBuddiesTest() throws Exception {
-        BuddyInfoModel buddyInfoModel = new BuddyInfoModel("adi", "613 456 5657");
+        BuddyInfoModel buddyInfoModel = new BuddyInfoModel("Khalid", "613-123-1245");
 
         mockMvc.perform(post("/api/v0/addressbook/mybook/buddies")
                 .contentType(MediaType.APPLICATION_JSON)
