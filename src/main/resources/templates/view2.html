@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>AddressBook</title>
+</head>
+<body style="background-color: lightgray; font-family: Arial, sans-serif;">
+
+<h1 style="text-align: center; font-size: 36px; color: navy; margin-top: 50px;"
+    th:text="'AddressBook Name: ' + ${AddressBookModel.name}"></h1>
+
+<table style="width: 80%; margin: auto; border-collapse: collapse; border: 1px solid black;">
+  <thead style="background-color: lightblue;">
+  <tr>
+    <th scope="col" style="border: 1px solid black; padding: 10px;">Id</th>
+    <th scope="col" style="border: 1px solid black; padding: 10px;">Name</th>
+    <th scope="col" style="border: 1px solid black; padding: 10px;">Number</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="BuddyInfoModel : ${Buddies}" style="background-color: white;">
+    <td style="border: 1px solid black; padding: 10px;" th:text="${BuddyInfoModel.id}"></td>
+    <td style="border: 1px solid black; padding: 10px;" th:text="${BuddyInfoModel.name}"></td>
+    <td style="border: 1px solid black; padding: 10px;" th:text="${BuddyInfoModel.number}"></td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
