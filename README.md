@@ -1,3 +1,4 @@
 # lab5
 
-[![Java CI](https://github.com/khalidkanaan/lab5/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/khalidkanaan/lab5/actions/workflows/maven-publish.yml)
+## Status Badge
+[![Java CI](https://github.com/khalidkanaan/lab5/actions/workflows/maven-publish.yml/badge.svg?branch=master)](https://github.com/khalidkanaan/lab5/actions/workflows/maven-publish.yml)
